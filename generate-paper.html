@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Question Paper</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .question-container {
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            font-size: 18px;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .question-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #back-home-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #print-btn {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="generated-questions">
+        <h1>Generated Question Paper</h1>
+
+        <!-- Dynamically Generated Questions Will Go Here -->
+        
+        <!-- Example of the format of questions -->
+        <div id="easy-questions"></div>
+        <div id="medium-questions"></div>
+        <div id="hard-questions"></div>
+
+        <!-- Print and Back buttons -->
+        
+          <!-- This is the Back to Home button -->
+          <a href="/"><button>Back to Home Page</button></a>
+
+
+        
+        <button id="print-btn" onclick="window.print();">Print</button>
+    </div>
+
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
+    const easyCount = localStorage.getItem('easyCount');
+    const mediumCount = localStorage.getItem('mediumCount');
+    const hardCount = localStorage.getItem('hardCount');
+
+    async function fetchQuestions(difficulty, count) {
+        try {
+            const response = await fetch(`/get-questions?difficulty=${difficulty}`);
+            const data = await response.json();
+
+            if (response.ok) {
+                const questions = data.questions.slice(0, count); // Limit to 'count' questions
+                displayQuestions(difficulty, questions);
+            } else {
+                displayQuestions(difficulty, [`No ${difficulty} questions available!`]);
+            }
+        } catch (error) {
+            console.error(`Error fetching ${difficulty} questions:`, error);
+        }
+    }
+
+    function displayQuestions(difficulty, questions) {
+        const container = document.getElementById(`${difficulty}-questions`);
+        questions.forEach((questionText, index) => {
+            const questionDiv = document.createElement('div');
+            questionDiv.className = 'question-container';
+            questionDiv.innerHTML = `
+                <div class="question-header">${difficulty.charAt(0).toUpperCase() + difficulty.slice(1)} Question ${index + 1}</div>
+                <p>${questionText}</p>
+            `;
+            container.appendChild(questionDiv);
+        });
+    }
+
+    if (easyCount) fetchQuestions("easy", easyCount);
+    if (mediumCount) fetchQuestions("medium", mediumCount);
+    if (hardCount) fetchQuestions("hard", hardCount);
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Paper</title>
+    <link rel="stylesheet" href="styles.css">
+   <style>
+    h2{
+        color: whitesmoke;
+    }
+   </style>
+</head>
+<body>
+    <header>
+        <h1>Exam Paper Generator</h1>
+    </header>
+
+    <main>
+        <h2>Upload Paper</h2>
+        <!-- Wrap textarea and button inside a form -->
+        <form method="POST" action="/upload">
+            <textarea id="upload-area" name="questions" placeholder="Paste or type your questions here..." rows="20" cols="80"></textarea>
+            <br>
+            <button type="submit" id="submit-upload">Submit</button>
+        </form>
+        <a href="/"><button>Back to Home Page</button></a>
+        
+    </main>
+    
+    
+
+    <script>
+        // Ensure the script runs after the DOM is fully loaded
+        document.addEventListener("DOMContentLoaded", function () {
+            // Handle Submit Button
+            const submitButton = document.getElementById("submit-upload");
+            if (submitButton) {
+                submitButton.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent default form submission
+    
+                    const uploadedQuestions = document.getElementById("upload-area").value.trim();
+                    if (uploadedQuestions === "") {
+                        alert("Please paste or type some questions before submitting!");
+                        return;
+                    }
+    
+                    // Send the question to the backend using Fetch API
+                    fetch("/upload", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/x-www-form-urlencoded",
+                        },
+                        body: `questions=${encodeURIComponent(uploadedQuestions)}`,
+                    })
+                        .then((response) => {
+                            if (response.ok) {
+                                return response.text();
+                            } else {
+                                throw new Error("Failed to upload questions.");
+                            }
+                        })
+                        .then((data) => {
+                            alert(data); // Display server response
+                            document.getElementById("upload-area").value = ""; // Clear the textarea
+                        })
+                        .catch((error) => {
+                            alert(error.message);
+                        });
+                });
+            }
+    
+            // Handle Back to Home Button
+            const backHomeButton = document.getElementById("back-home");
+            if (backHomeButton) {
+                backHomeButton.addEventListener("click", function () {
+                    window.location.href = "index.html"; // Navigate back to the home page
+                });
+            }
+        });
+    </script>
+    
+    
+    
+    
+</body>
+</html>

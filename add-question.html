@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Question</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Style for all buttons */
+        button, .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            background-color: #4CAF50; /* Green color */
+            color: white;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        /* Hover effect for all buttons */
+        button:hover, .btn:hover {
+            background-color: #45a049; /* Slightly darker green */
+        }
+
+        /* Align "Back to Home" button */
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none; /* Remove underline for link */
+        }
+
+        /* Make the textarea bigger */
+        textarea {
+            width: 100%;
+            height: 150px;  /* Increased height for better visibility */
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Add a Question</h1>
+
+        <form id="add-question-form" action="/add-question" method="POST">
+            <label for="question-text">Enter Question:</label>
+            <textarea id="question-text" name="question-text" placeholder="Enter your question" required></textarea>
+            <br>
+            <button type="submit">Add Question</button>
+        </form>
+
+        <a href="/"><button>Back to Home Page</button></a>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const addQuestionForm = document.getElementById("add-question-form");
+            if (addQuestionForm) {
+                addQuestionForm.addEventListener("submit", function (event) {
+                    event.preventDefault();
+
+                    const questionText = document.getElementById('question-text').value.trim();
+
+                    if (!questionText) {
+                        alert('Please enter the question!');
+                        return;
+                    }
+
+                    fetch("/add-question", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/x-www-form-urlencoded",
+                        },
+                        body: `question-text=${encodeURIComponent(questionText)}`,
+                    })
+                    .then((response) => {
+                        if (response.ok) {
+                            return response.text();
+                        } else {
+                            throw new Error('Failed to add question.');
+                        }
+                    })
+                    .then((data) => {
+                        alert(data);
+                        addQuestionForm.reset();
+                    })
+                    .catch((error) => {
+                        alert(error.message);
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

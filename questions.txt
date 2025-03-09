@@ -1,0 +1,94 @@
+1: Define binary tree and with example show array representation and linked representation of binary tree? -Topic: Binary Trees -Difficulty: easy
+2: Explain iterative inorder traversal and level order traversal? -Topic: Tree Traversals -Difficulty: easy
+3: Define threaded binary tree? What is the advantage of threaded binary tree over binary tree? -Topic: Threaded Binary Trees -Difficulty: medium
+4: What is right and left threaded binary tree? Explain inorder threaded binary tree. -Topic: Threaded Binary Trees -Difficulty: medium
+5: Construct the binary tree from the given traversals preorder:-A B D G C E H I F ,inorder:-D G B A H E I C F -Topic: Binary Tree Construction -Difficulty: easy
+6: Construct the binary tree from the given traversals inorder :- E I C F J B G D K H L A ,Postorder: I E J F C G K L H D BA -Topic: Binary Tree Construction -Difficulty: easy
+7: What is an expression tree? Create an expression tree for the expression (a+b)*(c-d) -Topic: Expression Trees -Difficulty: medium
+8: Create a BST of N Integers: 6, 9, 5, 2, 8, 15, 24, 14, 7, 8, 5, 2. Traverse the BST in Inorder, Preorder, and Post Order -Topic: Binary Search Trees -Difficulty: medium
+9: Compare between graph and tree? -Topic: Graphs vs Trees -Difficulty: medium
+10: Give the different representations for the graph with an example? -Topic: Graph Representations -Difficulty: easy
+11: Compare DFS and BFS. -Topic: Traversal Techniques -Difficulty: medium
+12: Define hash function? Explain collision resolution strategies? -Topic: Hash Functions -Difficulty: easy
+13: Define the following i. Hashing ii. Hash table iii. Hash function -Topic: Hashing Basics -Difficulty: easy
+14: Differentiate between static and dynamic hashing? -Topic: Hashing Techniques -Difficulty: medium
+15: Discuss in brief the linear probing collision resolution technique. What are the disadvantages of this technique? -Topic: Collision Resolution -Difficulty: hard
+16: Explain the different types of hash functions with examples? -Topic: Hash Functions -Difficulty: medium
+17: Consider the input sequence 3, 5, 6, 7, 20, 8, 2, 9. Write min winner tree and corresponding loser tree -Topic: Winner and Loser Trees -Difficulty: medium
+18: Write algorithms to traverse a forest in preorder, inorder, and postorder -Topic: Forest Traversals -Difficulty: medium
+19: Explain union-find data structure and its operations -Topic: Union-Find -Difficulty: hard
+20: Consider a binary search tree of 4 nodes. Count the number of possible binary search trees that are possible -Topic: Binary Search Trees -Difficulty: medium
+21: What is an optimal binary search tree? Problem: Let p (1:3) = (0.5, 0.1, 0.05) q (0:3) = (0.15, 0.1, 0.05, 0.05) -Topic: Optimal Binary Search Trees -Difficulty: hard
+22: Compute and construct OBST for the above values using a dynamic approach. -Topic: Optimal Binary Search Trees -Difficulty: hard
+23: What is a priority queue? Explain different ways of implementing a priority queue -Topic: Priority Queues -Difficulty: hard
+24: What is a leftist tree, and explain its properties? Construct a leftist heap for the input sequence: 3, 5, 6, 7, 20, 8 -Topic: Leftist Trees -Difficulty: hard
+25: Explain the advantage of circular queue over ordinary queue. Write a C program to simulate the working of a circular queue of integers using array -Topic: Circular Queues -Difficulty: easy
+26: Demonstrate operations on queue using linked list. -Topic: Queues Using Linked Lists -Difficulty: hard
+27: Explain the different types of queues with examples. -Topic: Queue Types -Difficulty: easy
+28: Write a C program to implement priority queue using arrays. -Topic: Priority Queues -Difficulty: hard
+29: Explain different types of linked lists with neat diagrams. -Topic: Linked Lists -Difficulty: hard
+30: Demonstrate the working of a stack using linked list. -Topic: Stacks Using Linked Lists -Difficulty: hard
+31: Write C functions to implement insert, delete and display functions on a dynamic queue. -Topic: Dynamic Queues -Difficulty: hard
+32: Write a C program to implement linked stacks. -Topic: Linked Stacks -Difficulty: easy
+33: Write a note on dequeue and priority queue with suitable examples. List applications of priority queue. -Topic: Dequeue and Priority Queues -Difficulty: hard
+34: Discuss the applications of queues. -Topic: Queue Applications -Difficulty: easy
+35: Discuss the advantages of implementing any data structure using linked lists. -Topic: Linked List Advantages -Difficulty: easy
+36: How polynomials are represented using circular linked lists? Give its C declarations and structure definition. -Topic: Polynomial Representation -Difficulty: hard
+37: What is a header node? What is its importance? -Topic: Header Node -Difficulty: hard
+38: What is linked list? Give the importance of linked list. -Topic: Linked Lists -Difficulty: easy
+39: Write a C function to perform polynomial addition using linked lists. -Topic: Polynomial Addition -Difficulty: easy
+40: Write a C function which checks all the cases of deletion in singly linked list. -Topic: Singly Linked List Deletion -Difficulty: easy
+41: Write a C program to insert a node in a linked list after a node X. -Topic: Node Insertion -Difficulty: easy
+42: Write a C program to perform insertion, deletion (from both ends), display, and insert based on the position in doubly linked list. -Topic: Doubly Linked Lists -Difficulty: medium
+43: Design a function to simulate customer service using a queue. Explain how you would prioritize customers based on urgency using a priority queue. -Topic: Customer Service Queues -Difficulty: medium
+44: Differentiate between arrays and linked lists. Discuss scenarios where each would be preferred. -Topic: Arrays vs Linked Lists -Difficulty: easy
+45: Show the linked representation of the below two polynomials and their addition using a circular singly linked list.  P1: 5x3 + 4x2 + 7x + 3  ,P2: 6x2 + 5 , -Topic: Polynomial Addition -Difficulty: hard
+46: Develop a C program to implement insertion, deletion, and display operations on a linear queue. -Topic: Linear Queue Operations -Difficulty: easy
+47: Write insert and delete functions for a circular doubly linked list. -Topic: Circular Doubly Linked List -Difficulty: medium
+1: Define binary tree and with example show array representation and linked representation of binary tree? -Topic: Binary Trees -Difficulty: easy
+2: Explain iterative inorder traversal and level order traversal? -Topic: Tree Traversals -Difficulty: easy
+3: Define threaded binary tree? What is the advantage of threaded binary tree over binary tree? -Topic: Threaded Binary Trees -Difficulty: medium
+4: What is right and left threaded binary tree? Explain inorder threaded binary tree. -Topic: Threaded Binary Trees -Difficulty: medium
+5: Construct the binary tree from the given traversals preorder:-A B D G C E H I F ,inorder:-D G B A H E I C F -Topic: Binary Tree Construction -Difficulty: easy
+6: Construct the binary tree from the given traversals inorder :- E I C F J B G D K H L A ,Postorder: I E J F C G K L H D BA -Topic: Binary Tree Construction -Difficulty: easy
+7: What is an expression tree? Create an expression tree for the expression (a+b)*(c-d) -Topic: Expression Trees -Difficulty: medium
+8: Create a BST of N Integers: 6, 9, 5, 2, 8, 15, 24, 14, 7, 8, 5, 2. Traverse the BST in Inorder, Preorder, and Post Order -Topic: Binary Search Trees -Difficulty: medium
+9: Compare between graph and tree? -Topic: Graphs vs Trees -Difficulty: medium
+10: Give the different representations for the graph with an example? -Topic: Graph Representations -Difficulty: easy
+11: Compare DFS and BFS. -Topic: Traversal Techniques -Difficulty: medium
+12: Define hash function? Explain collision resolution strategies? -Topic: Hash Functions -Difficulty: easy
+13: Define the following i. Hashing ii. Hash table iii. Hash function -Topic: Hashing Basics -Difficulty: easy
+14: Differentiate between static and dynamic hashing? -Topic: Hashing Techniques -Difficulty: medium
+15: Discuss in brief the linear probing collision resolution technique. What are the disadvantages of this technique? -Topic: Collision Resolution -Difficulty: hard
+16: Explain the different types of hash functions with examples? -Topic: Hash Functions -Difficulty: medium
+17: Consider the input sequence 3, 5, 6, 7, 20, 8, 2, 9. Write min winner tree and corresponding loser tree -Topic: Winner and Loser Trees -Difficulty: medium
+18: Write algorithms to traverse a forest in preorder, inorder, and postorder -Topic: Forest Traversals -Difficulty: medium
+19: Explain union-find data structure and its operations -Topic: Union-Find -Difficulty: hard
+20: Consider a binary search tree of 4 nodes. Count the number of possible binary search trees that are possible -Topic: Binary Search Trees -Difficulty: medium
+21: What is an optimal binary search tree? Problem: Let p (1:3) = (0.5, 0.1, 0.05) q (0:3) = (0.15, 0.1, 0.05, 0.05) -Topic: Optimal Binary Search Trees -Difficulty: hard
+22: Compute and construct OBST for the above values using a dynamic approach. -Topic: Optimal Binary Search Trees -Difficulty: hard
+23: What is a priority queue? Explain different ways of implementing a priority queue -Topic: Priority Queues -Difficulty: hard
+24: What is a leftist tree, and explain its properties? Construct a leftist heap for the input sequence: 3, 5, 6, 7, 20, 8 -Topic: Leftist Trees -Difficulty: hard
+25: Explain the advantage of circular queue over ordinary queue. Write a C program to simulate the working of a circular queue of integers using array -Topic: Circular Queues -Difficulty: easy
+26: Demonstrate operations on queue using linked list. -Topic: Queues Using Linked Lists -Difficulty: hard
+27: Explain the different types of queues with examples. -Topic: Queue Types -Difficulty: easy
+28: Write a C program to implement priority queue using arrays. -Topic: Priority Queues -Difficulty: hard
+29: Explain different types of linked lists with neat diagrams. -Topic: Linked Lists -Difficulty: hard
+30: Demonstrate the working of a stack using linked list. -Topic: Stacks Using Linked Lists -Difficulty: hard
+31: Write C functions to implement insert, delete and display functions on a dynamic queue. -Topic: Dynamic Queues -Difficulty: hard
+32: Write a C program to implement linked stacks. -Topic: Linked Stacks -Difficulty: easy
+33: Write a note on dequeue and priority queue with suitable examples. List applications of priority queue. -Topic: Dequeue and Priority Queues -Difficulty: hard
+34: Discuss the applications of queues. -Topic: Queue Applications -Difficulty: easy
+35: Discuss the advantages of implementing any data structure using linked lists. -Topic: Linked List Advantages -Difficulty: easy
+36: How polynomials are represented using circular linked lists? Give its C declarations and structure definition. -Topic: Polynomial Representation -Difficulty: hard
+37: What is a header node? What is its importance? -Topic: Header Node -Difficulty: hard
+38: What is linked list? Give the importance of linked list. -Topic: Linked Lists -Difficulty: easy
+39: Write a C function to perform polynomial addition using linked lists. -Topic: Polynomial Addition -Difficulty: easy
+40: Write a C function which checks all the cases of deletion in singly linked list. -Topic: Singly Linked List Deletion -Difficulty: easy
+41: Write a C program to insert a node in a linked list after a node X. -Topic: Node Insertion -Difficulty: easy
+42: Write a C program to perform insertion, deletion (from both ends), display, and insert based on the position in doubly linked list. -Topic: Doubly Linked Lists -Difficulty: medium
+43: Design a function to simulate customer service using a queue. Explain how you would prioritize customers based on urgency using a priority queue. -Topic: Customer Service Queues -Difficulty: medium
+44: Differentiate between arrays and linked lists. Discuss scenarios where each would be preferred. -Topic: Arrays vs Linked Lists -Difficulty: easy
+45: Show the linked representation of the below two polynomials and their addition using a circular singly linked list.  P1: 5x3 + 4x2 + 7x + 3  ,P2: 6x2 + 5 , -Topic: Polynomial Addition -Difficulty: hard
+46: Develop a C program to implement insertion, deletion, and display operations on a linear queue. -Topic: Linear Queue Operations -Difficulty: easy
+47: Write insert and delete functions for a circular doubly linked list. -Topic: Circular Doubly Linked List -Difficulty: medium
