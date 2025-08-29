@@ -24,7 +24,17 @@ A simple, user-friendly tool to generate exam papers and manage questions with e
 
 ## 📂 Project Structure
 
-
+├── app.py
+├── questions.txt
+├── README.md
+├── index.html
+├── add-question.html
+├── upload.html
+├── generate-question.html
+├── generate-paper.html
+├── save.html
+├── styles.css
+└── script.js
 
 
 
@@ -38,14 +48,15 @@ A simple, user-friendly tool to generate exam papers and manage questions with e
    git clone https://github.com/Manu77211/Exam-Paper-Generator-.git
 
 2. **Run Backend **
+    ```sh
    python app.py
 
 
 📖Usage
-Add Questions: Navigate to add-question.html and fill in the form.
-Generate Paper: Go to generate-paper.html and select your preferences.
-Upload Questions: Use upload.html to import questions.
-Save Paper: Save your generated paper via save.html.
+1)Add Questions: Navigate to add-question.html and fill in the form.
+2)Generate Paper: Go to generate-paper.html and select your preferences.
+3)Upload Questions: Use upload.html to import questions.
+4)Save Paper: Save your generated paper via save.html.
 
 
 
